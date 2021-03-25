@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=0">
+    <title>html+css笔记</title>
+    <!-- 图标 -->
+    <link rel="shortcut icon" href="./img/bitbug_favicon.ico" />
+    <!-- normalize初始化样式 移动端专用 -->
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 通用样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- index样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- rem布局 -->
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="w">
+            盗墓笔记之小安H5+C3笔记
+        </div>
+    </header>
+    <!-- 头部 end -->
+    <!-- 内容部分 -->
+    <div class="h5">
+        <div class="w">
+            <!-- html部分 -->
+            <div>
+                <h1>html</h1>
+                <div class="tab">
+                    <h2>表格<b>table</b></h2>
+                    <p>table、tr、td、th(表头)、caption（标题）、thead(表格的头部)、tbody（表格的主体）、tfoot（表格的脚注）</p>
+                    <h3><b>table</b>单元格的2种合并方式</h3>
+                    <p>跨行合并：rowspan=“合并单元格的个数”(上下合并)</p>
+                    <p>跨列合并：colspan=“合并单元格的个数”（左右合并）</p>
+                    <h3><b>table</b>边框合并</h3>
+                    <p>让表格、单元格、th合并相邻的边框 border-collapse:collapse;</p>
+                </div>
+                <div class="tab">
+                    <h2>列表</h2>
+                    <p>无序列表 ul li </p>
+                    <p>有序列表 ol li</p>
+                    <p>自定义列表dl、dt、dd</p>
+                </div>
+                <div class="tab">
+                    <h2><b>form</b>属性</h2>
+                    <p>action=“url” method="get/post" name="name"</p>
+                </div>
+            </div>
+            <!-- html部分 end -->
+            <!-- css部分 -->
+            <div>
+                <h1>css</h1>
+                <div class="tab">
+                    <h2>图片转为ico的网址 <b>http://www.bitbug.net/</b></h2>
+                </div>
+                <div class="tab">
+                    <h2>超出...显示三部曲</h2>
+                    <p>white-space:nowrap;强制一行显示</p>
+                    <p>overflow:hidden;超出隐藏</p>
+                    <p>text-overflow:ellipsis;超出...显示</p>
+                </div>
+                <div class="tab">
+                    <h2>元素显示隐藏</h2>
+                    <p>display:block;显示display:none;隐藏（不占位）</p>
+                    <p>visibility:visible;显示visibility:hidden;隐藏（占位）</p>
+                </div>
+                <div class="tab">
+                    <h2><b>box-sizing</b>改为c3盒子模型</h2>
+                    <img class="box_model" src="./img/box-sizing.png" alt="">
+                    <p><b>box-sizing:border-box;</b></p>
+                    <p><b>box-sizing:content-box;</b></p>
+                </div>
+                <div class="tab property">
+                    <h2><b></b>属性选择器</h2>
+                    <img class="property_num1" src="./img/property1.png" alt="">
+                    <img class="property_num2" src="./img/property2.png" alt="">
+                </div>
+                <div class="tab triangle">
+                    <h2><b></b>css制作三角形</h2>
+                    <p>示例: &nbsp;&nbsp;&nbsp;<i></i></p>
+                    <textarea name="" id="" disabled>
+p{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: red transparent transparent transparent;
+    font-size: 0;
+    line-height: 0;  
+}
+                    </textarea>
+                </div>
+                <div class="tab viewport">
+                    <h2>移动端<b>mate</b>视口标签</h2>
+                    <img src="./img/viewport.png" alt="">
+                    <p><b>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=0"&gt;</b></p>
+                </div>
+                <div class="tab elses">
+                    <h2><b></b>移动端特殊样式</h2>
+                    <textarea name="" id="" disabled>
+/* css3盒子模型 */
+box-sizing:border-box;
+-webkit-box-sizing:border-box;
+/* 点击高亮我们需要清除 设置为transparent 完成透明 */
+-webkit-tap-highlight-color:transparent;
+/* 移动端浏览器默认的外观在ios上加上这个属性才能给按钮和输入框自定义样式 */
+-webkit-appearance:none;
+/* 禁用长按页面时弹出的菜单 */
+img,a{-webkit-touch-callout:none;}
+/* 文字阴影 */
+text-shadow:1px 1px rgba(0,0,0,.2);
+                    </textarea>
+                </div>
+                <div class="tab">
+                    <h2><b></b>定位</h2>
+                    <p><b>relative</b> 以自身位置发生偏移 不脱离文档流 占位</p>
+                    <p><b>absolute</b> 如果父级有定位相对于父级元素发生偏移 如果没有则相对于浏览器 脱离文档流 不占位</p>
+                    <p><b>fiexd</b> 基于浏览器的可视窗口 脱离文档流 不占位 </p>
+                </div>
+                <div class="tab float">
+                    <h2>清除浮动<b></b></h2>
+                    <h3><b>伪元素</b>清除浮动</h3>
+                    <textarea name="" id="" disabled>
+    /*声明清楚浮动的样式*/
+    .clearfix:after{
+        content:"";
+        display:block;
+        height:0;
+        visibility:hidden;
+        clear:both;
+    }
+    .clearfix{   /* html父级盒子只需添加类名   即可清除浮动*/  
+        *zoom:1;       /*ie6、7   专门清楚浮动的样式*/
+    }
+                    </textarea>
+                    <h3><b>双伪元素</b>清除浮动</h3>
+                    <textarea name="" id="" disabled>
+    .clearfix:before,clearfix:after{
+        content:"";
+        display:table;
+    }
+    .clearfix:after{
+        clear:both;
+    }
+    .clearfix{
+        *zoom:1;
+    }
+                    </textarea>
+                </div>
+                <div class="tab">
+                    <img class="box_hr" src="./img/box_hr.png" alt="">
+                    <p><b>flex-wrap:nowrap;</b> <b>flex-wrap:wrap;</b></p>
+                </div>
+                <div class="tab">
+                    <img class="box_hr" src="./img/box_align.png" alt="">
+                </div>
+                <div class="tab">
+                    <img class="box_hr" src="./img/box_align2.png" alt="">
+                </div>
+                <div class="tab">
+                    <h2><b>如何选择布局</b></h2>
+                    <img class="box_hr" src="./img/box_align3.png" alt="">
+                </div>
+                <div class="tab footer">
+                    <h2>其他</h2>
+                    <p><b>input</b>轮廓线 outline:0;去掉</p>
+                    <p><b>textarea</b>文本域禁止拖拽 resize:none;</p>
+                    <p><b>vertical-align:midden;</b>垂直居中（只针对于行内元素跟行内块元素）</p>
+                    <p><b>img{vertical-align:top;border:0;}</b>目的是去除边框跟底部空白</p>
+                    <p><b>为什么用精灵图？</b>为了有效的减少服务器接受和发送请求的次数，提高页面的加载速度</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 内容部分 end -->
+</body>
+
+</html>

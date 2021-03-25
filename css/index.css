@@ -1,0 +1,130 @@
+header .w {
+    background: #666;
+    text-align: center;
+    padding: .2rem 0;
+    color: #fff;
+    font-size: .32rem;
+    font-weight: bold;
+}
+
+h2 {
+    padding: .15rem;
+}
+
+h3 {
+    padding: .1rem;
+}
+
+.h5 .w {
+    background: #fff;
+    overflow: hidden;
+}
+
+.h5 .w h1 {
+    margin: 0;
+    padding: .1rem;
+    background: aqua;
+    border-bottom: .03rem solid #666;
+}
+
+.h5 .w b {
+    color: red;
+}
+
+.h5 .tab {
+    padding: 0 .2rem;
+    padding-bottom: .1rem;
+    border-bottom: .03rem solid #666;
+}
+
+.h5 .float textarea {
+    box-sizing: border-box;
+    padding: .2rem;
+    width: 100%;
+    height: 3.8rem;
+    resize: none;
+    overflow: hidden;
+}
+
+.h5 .tab img.box_model {
+    width: 100%;
+}
+
+.triangle i {
+    /* display: block; */
+    /* 制作一个css的三角形 */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: red transparent transparent transparent;
+    font-size: 0;
+    line-height: 0;
+}
+
+.triangle textarea {
+    box-sizing: border-box;
+    padding: .2rem;
+    width: 100%;
+    height: 3.2rem;
+    /*禁止文本框拖拽放大或缩小*/
+    resize: none;
+    overflow: hidden;
+}
+
+.property .property_num1 {
+    width: 100%;
+}
+
+.property .property_num2 {
+    width: 100%;
+}
+
+.elses textarea {
+    box-sizing: border-box;
+    padding: .2rem;
+    width: 100%;
+    height: 4.3rem;
+    /*禁止文本框拖拽放大或缩小*/
+    resize: none;
+    overflow: hidden;
+}
+
+.viewport img {
+    width: 100%;
+}
+
+.box_hr {
+    margin-top: .2rem;
+    width: 100%;
+}
+
+.h5 .footer {
+    border-bottom: .5rem solid #000;
+}
+
+
+/* js.html */
+
+.tab img {
+    width: 100%;
+}
+
+.tab1 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab1 div p {
+    text-align: left;
+}
+
+.tab2 div {
+    display: flex;
+    justify-content: center;
+}
+
+.tab2 div p {
+    text-align: left;
+}
